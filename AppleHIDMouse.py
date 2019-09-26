@@ -2,6 +2,7 @@
 import CoreFoundation
 from Foundation import NSBundle
 import objc
+CoreFoundation.CFPreferencesSetAppValue("Button1",1,"com.apple.driver.AppleHIDMouse")
 CoreFoundation.CFPreferencesSetAppValue("Button2",2,"com.apple.driver.AppleHIDMouse")
 CoreFoundation.CFPreferencesAppSynchronize("com.apple.driver.AppleHIDMouse")
 bezel_bundle = NSBundle.bundleWithPath_('/System/Library/PrivateFrameworks/BezelServices.framework')
